@@ -2,13 +2,22 @@
 
 This is a simple application to be used in the technical test of DevOps.
 
-## Getting Started
+This project demonstrates how to build and deploy an application using Docker, Kubernetes, Terraform, ArgoCD, and Jenkins for continuous integration and delivery, and Prometheus and Grafana for monitoring.
+
+## Quick Start
 
 ### Prerequisites
 
-- Java Version 17
-- Spring Boot 3.0.5
+- Java 17
+- Spring Boot 2.5.0
 - Maven
+- Docker
+- Kubernetes
+- Terraform
+- ArgoCD
+- Jenkins
+- Prometheus
+- Grafana	
 
 ### Installation
 
@@ -137,6 +146,49 @@ If the response is unsuccessful, we will receive status 400 and the following me
 }
 ```
 
+#### Building and Deploying the Docker Container
+
+1. Generate the project's JAR file by running `mvn clean package`.
+2. Create the Dockerfile for your application.
+3. Build the Docker image with `docker build -t app-demo-devsu:1.0 .`.
+4. Create the docker-compose.yml file.
+5. Generate the image with `docker-compose build`.
+6. Launch the Docker container.
+
+#### Deployment on Azure with Terraform and Kubernetes
+
+1. Use Terraform to create a resource group and configure the Kubernetes cluster in Azure.
+2. Create a Kubernetes Secret for authentication with the Container Registry.
+3. Upload the Docker image to the Container Registry.
+
+#### Configuring ArgoCD for Continuous Delivery
+
+1. Create a project on GitHub for the ArgoCD configuration.
+2. Set up the ArgoCD project.
+3. Verify the creation of deployments, pods, replica sets, and the load balancer in the cluster.
+
+#### Configuring Jenkins and SonarQube for Continuous Integration
+
+1. Create the Jenkinsfile to set up the Jenkins pipeline.
+2. Configure the Pipeline in Jenkins.
+3. Set up SonarQube for code quality analysis.
+
+#### Configuring Prometheus and Grafana for Monitoring
+
+1. Install and configure Prometheus.
+2. Install Grafana for monitoring.
+3. Set up the Grafana dashboard to connect it with Prometheus and monitor the metrics of the Spring Boot container.
+4. Configure alerts in Grafana.
+5. Access Grafana on your local machine by doing a port-forward to the Grafana pod.
+
+#### Detected Vulnerabilities
+
+1. System Vulnerability 1: [Description of Vulnerability 1]
+2. Found Vulnerability 2: [Description of Vulnerability 2]
+
+Note: Replace [Description of Vulnerability 1] and [Description of Vulnerability 2] with the actual descriptions of the detected vulnerabilities.
+  
+  
 ## License
 
 Copyright © 2023 Devsu. All rights reserved.
