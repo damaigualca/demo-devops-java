@@ -19,6 +19,12 @@ This project demonstrates how to build and deploy an application using Docker, K
 - Prometheus
 - Grafana	
 
+### Guides and Additional Resources
+
+- [Project Guide Document](https://docs.google.com/document/d/1p-QZU0v1oAbiYLWB1rzMHTI0POcej_bm9jAtGw_W23A/edit?usp=sharing)
+- [ArgoCD Continuous Delivery Project on GitHub](https://github.com/damaigualca/argo-master.git)
+
+
 ### Installation
 
 Clone this repo.
@@ -181,14 +187,7 @@ If the response is unsuccessful, we will receive status 400 and the following me
 4. Configure alerts in Grafana.
 5. Access Grafana on your local machine by doing a port-forward to the Grafana pod.
 
-#### Detected Vulnerabilities
 
-1. System Vulnerability 1: [Description of Vulnerability 1]
-2. Found Vulnerability 2: [Description of Vulnerability 2]
-
-Note: Replace [Description of Vulnerability 1] and [Description of Vulnerability 2] with the actual descriptions of the detected vulnerabilities.
-  
-  
 ## License
 
 Copyright © 2023 Devsu. All rights reserved.
