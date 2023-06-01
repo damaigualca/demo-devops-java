@@ -8,10 +8,10 @@ on:
 
 jobs:
   build-jar:
-    # add matrix to run with different JDK versions (16, 17, 18)
+    # add matrix to run with different JDK versions (17, 18)
     strategy:
       matrix:
-        java-version: [ 16, 17, 18 ]
+        java-version: [ 17, 18 ]
     runs-on: ubuntu-latest
 
     steps:
