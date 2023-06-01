@@ -1,10 +1,7 @@
 name: Variables
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  workflow_dispatch:
 
 env:
   # variable to target/demo-0.0.1.jar
