@@ -8,9 +8,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Show variables
-              run: |
-                  echo "The value of the variable is $GITHUB_ACTION" &&
-                  echo "The value of the variable is $GITHUB_ACTOR" &&
+              run:  echo "The value of the variable is $GITHUB_ACTION" &&
+                    echo "The value of the variable is $GITHUB_ACTOR" &&
                     echo "The value of the variable is $GITHUB_BASE_REF" &&
                     echo "The value of the variable is $GITHUB_EVENT_NAME" &&
                     echo "The value of the variable is $GITHUB_EVENT_PATH" &&
