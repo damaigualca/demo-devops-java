@@ -1,4 +1,4 @@
-name: Secret with Docker Hub
+name: Self Hosted Linux Runner
 
 on:
   workflow_dispatch:
